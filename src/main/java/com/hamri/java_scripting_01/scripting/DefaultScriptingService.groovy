@@ -23,7 +23,6 @@ class DefaultScriptingService implements ScriptingService {
 
     @PostConstruct
     private void init() {
-        manager.getEngineByName()
         manager.getEngineFactories().forEach { f -> System.out.println(f.getEngineName())}
         manager.getEngineFactories().stream()
                 .findFirst()
