@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Script Console</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="container">
+    <div id="tabs">
+        <button class="tab" onclick="showPanel('edit')">Edit Statement</button>
+        <button class="tab" onclick="showPanel('result')">Result</button>
+        <button class="tab" onclick="showPanel('output')">Output</button>
+        <button class="tab" onclick="showPanel('stack')">Stack trace</button>
+        <button class="tab" onclick="showPanel('history')">History</button>
+    </div>
+    <div id="panel-edit" class="panel">
+        <textarea id="scriptInput"></textarea>
+        <button onclick="executeScript()">Execute</button>
+    </div>
+    <div id="panel-result" class="panel" style="display:none;">
+        <pre id="result"></pre>
+    </div>
+    <div id="panel-output" class="panel" style="display:none;">
+        <pre id="output"></pre>
+    </div>
+    <div id="panel-stack" class="panel" style="display:none;">
+        <pre id="stackTrace"></pre>
+    </div>
+    <div id="panel-history" class="panel" style="display:none;">
+        <pre id="history"></pre>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
